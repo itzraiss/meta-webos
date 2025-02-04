@@ -1,8 +1,11 @@
-const APP_URL = 'https://m.facebook.com';
+const APP_URL = 'https://mbasic.facebook.com';
 
 export const startApp = () => {
-  window.location.href = APP_URL;
+  setTimeout(() => {
+    window.location.replace(APP_URL);
+  }, 1000); // Espera 1 segundo antes de redirecionar
 };
+
 
 const keyMap = {
   40: 'down',    // Seta para baixo
