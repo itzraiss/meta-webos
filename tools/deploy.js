@@ -6,7 +6,7 @@ process.exit(
     normalize('./node_modules/.bin/ares-install'),
     [
       normalize(
-        `./tiktok.djvreditel.v1_${process.env.npm_package_version}_all.ipk`
+        `./meta.itzraisss.v1_${process.env.npm_package_version}_all.ipk`
       )
     ],
     { stdio: 'inherit', shell: true }

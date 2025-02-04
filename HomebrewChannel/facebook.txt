@@ -1,0 +1,30 @@
+{
+  "paging": {
+    "page": 1,
+    "count": 1,
+    "maxPage": 1,
+    "itemsTotal": 1
+  },
+  "packages": [
+    {
+      "id": "meta.itzraisss.v1",
+      "title": "Meta",
+      "iconUri": "https://raw.githubusercontent.com/DjVreditel/meta-webos/main/assets/largeIcon.png",
+      "manifest": {
+        "id": "meta.itzraisss.v1",
+        "version": "1.1.0",
+        "type": "web",
+        "title": "Meta",
+        "iconUri": "https://raw.githubusercontent.com/DjVreditel/meta-webos/main/assets/largeIcon.png",
+        "sourceUrl": "https://github.com/DjVreditel/meta-webos",
+        "rootRequired": false,
+        "ipkUrl": "https://drive.usercontent.google.com/uc?id=10lgcgX8Tp58hK2tAMD_MTyj4GWTXAKre&export=download",
+        "ipkHash": {
+          "sha256": "acda05efc34d6c252d83057db10da0d53c171822874612a1a4a8fcba66d404f4"
+        }
+      },
+      "shortDescription": "Unofficial Meta App for WebOS with extended features",
+      "fullDescriptionUrl": "https://raw.githubusercontent.com/DjVreditel/meta-webos/main/HomebrewChannel/index.html"
+    }
+  ]
+}

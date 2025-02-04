@@ -1,17 +1,15 @@
-const APP_URL = 'https://tv.tiktok.com/webos';
+const APP_URL = 'https://m.facebook.com';
 
 export const startApp = () => {
   window.location.href = APP_URL;
 };
 
-const colorCodeMap = {
-  403: 'red',
-  404: 'green',
-  172: 'green',
-  405: 'yellow',
-  170: 'yellow',
-  406: 'blue',
-  191: 'blue'
+const keyMap = {
+  40: 'down',    // Seta para baixo
+  38: 'up',      // Seta para cima
+  39: 'right',   // Seta para direita
+  37: 'left',    // Seta para esquerda
+  13: 'enter'    // Botão "OK"
 };
 
-export const getKeyColor = (keyCode) => colorCodeMap[keyCode] ?? null;
+export const getKeyAction = (keyCode) => keyMap[keyCode] ?? null;

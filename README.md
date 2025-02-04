@@ -1,6 +1,6 @@
-# TikTok WebOS
+# Meta WebOS
 
-Unofficial TikTok App for WebOS with extended features
+Unofficial meta App for WebOS with extended features
 
 ![Splash](./assets/splash.png)
 
@@ -16,22 +16,22 @@ Unofficial TikTok App for WebOS with extended features
 
 ## Installation
 
-- Use [Device Manager app](https://github.com/webosbrew/dev-manager-desktop) - see [Releases](https://github.com/DjVreditel/tiktok-webos/releases) for a
+- Use [Device Manager app](https://github.com/webosbrew/dev-manager-desktop) - see [Releases](https://github.com/itzraiss/meta-webos/releases) for a
   prebuilt `.ipk` binary file
 - Use [webOS TV CLI tools](https://webostv.developer.lge.com/develop/tools/cli-installation) -
-  `ares-install tiktok...ipk` (for webOS CLI tools configuration see below)
-- Use [Homebrew Channel](https://www.webosbrew.org/), add the app source below into the [Homebrew Channel](https://www.webosbrew.org/), and the TikTok app will appear in the list
+  `ares-install meta...ipk` (for webOS CLI tools configuration see below)
+- Use [Homebrew Channel](https://www.webosbrew.org/), add the app source below into the [Homebrew Channel](https://www.webosbrew.org/), and the Meta app will appear in the list
 
   Short link — if it isn't available, use the full link (you can also use URL shortener tools so you don't have to enter a long TV link)
 
   ```
-  https://tinyurl.com/lg-tiktok
+  https://tinyurl.com/lg-meta
   ```
 
   Original link
 
   ```
-  https://raw.githubusercontent.com/DjVreditel/tiktok-webos/main/HomebrewChannel/tiktok.txt
+  https://raw.githubusercontent.com/itzraiss/meta-webos/main/HomebrewChannel/meta.txt
   ```
 
 ### Autostart
@@ -40,10 +40,10 @@ To autostart an application, the following command needs to be executed
 via SSH or Telnet:
 
 ```sh
-luna-send-pub -n 1 'luna://com.webos.service.eim/addDevice' '{"appId":"tiktok.djvreditel.v1","pigImage":"","mvpdIcon":""}'
+luna-send-pub -n 1 'luna://com.webos.service.eim/addDevice' '{"appId":"meta.itzraisss.v1","pigImage":"","mvpdIcon":""}'
 ```
 
-This will make "TikTok" display as an eligible input application (next
+This will make "Meta" display as an eligible input application (next
 to HDMI/Live TV, etc...), and, if it was the last selected input, it will be
 automatically launched when turning on the TV.
 
@@ -54,7 +54,7 @@ constantly in the background, at the cost of increased idle memory usage.
 To disable app autostart run this:
 
 ```sh
-luna-send-pub -n 1 'luna://com.webos.service.eim/deleteDevice' '{"appId":"tiktok.djvreditel.v1"}'
+luna-send-pub -n 1 'luna://com.webos.service.eim/deleteDevice' '{"appId":"meta.itzraisss.v1"}'
 ```
 
 ## Building
@@ -62,13 +62,13 @@ luna-send-pub -n 1 'luna://com.webos.service.eim/deleteDevice' '{"appId":"tiktok
 - Clone the repository
 
 ```sh
-git clone https://github.com/DjVreditel/tiktok-webos.git
+git clone https://github.com/itzraiss/meta-webos.git
 ```
 
 - Enter the folder and build the App, this will generate a `*.ipk` file.
 
 ```sh
-cd tiktok-webos
+cd meta-webos
 
 # Install dependencies (need to do this only when updating local repository / package.json is changed)
 npm install

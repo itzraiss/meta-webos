@@ -21,8 +21,8 @@ fs.writeFileSync(
     type: appinfo.type,
     title: appinfo.title,
     iconUri:
-      'https://raw.githubusercontent.com/DjVreditel/tiktok-webos/main/assets/largeIcon.png',
-    sourceUrl: 'https://github.com/DjVreditel/tiktok-webos',
+      'https://raw.githubusercontent.com/DjVreditel/meta-webos/main/assets/largeIcon.png',
+    sourceUrl: 'https://github.com/DjVreditel/meta-webos',
     rootRequired: false,
     ipkUrl: ipkfile,
     ipkHash: {
